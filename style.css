@@ -83,6 +83,41 @@ main.row {
 }
 
 
+a:hover {
+	background-color: var(--blue-dark);
+	animation: spin 1s infinite linear;
+}
+
+a:active {
+	animation: bounce 1s infinite linear;
+}
+
+h1:hover {
+	animation: bounce 1s infinite linear;
+
+}
+
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+		color: var(--blue-lighter);
+	}
+
+	50% {
+		color: var(--blue-darker);
+	}
+
+	100% {
+		transform: rotate(180deg);
+		color: var(--blue-lighter);
+	}
+}
+
+
+
+
+
 
 /* Desktop styling goes here */
 
@@ -98,7 +133,7 @@ main.row {
 	}
 
 	.column {
-		width: 30dvw;
+		width: 45dvw;
 		height: 50dvh;
 	}
 
